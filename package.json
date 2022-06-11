@@ -1,0 +1,15 @@
+{
+  "name": "calc-area",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "tailwindcss -i src/style.css -o public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

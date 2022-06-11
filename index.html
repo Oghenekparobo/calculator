@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/style.css">
+  <title>calc</title>
+</head>
+
+<body class="bg-green-500">
+  <header>
+    <h1 class="uppercase text-center mt-6 font-bold text-xl text-white">calculate the area of your favorite shapes</h1>
+  </header>
+
+  <div class="calc-form text-center p-4 mt-10 text-xl">
+    <form action="">
+      <select name="area"  class="all_shapes capitalize shape shadow rounded-xl  w-full text-center text-green-500">
+        <option value="select" class="hover:text-white null">select shape</option>
+        <option value="triangle" class="hover:text-white triange">triangle</option>
+        <option value="circle" class="hover:text-white circle">circle</option>
+        <option value="rectangle" class="hover:text-white rectangle">rectangle</option>
+        <option value="square" class="hover:text-white square">square</option>
+      </select>
+
+      <div class="area_input">
+        <div id="triangle" class="w-100 mt-6 flex justify-around hidden">
+          <p class="text-gray-500">1/2</p>
+          <p class="text-red-900">x</p>
+          <input type="number" class="triangle_base" placeholder="enter base">
+          <p class="text-red-900">x</p>
+          <input type="number" class="triangle_height" placeholder="enter height">
+        </div>
+      </div>
+
+      <div class="area_input">
+        <div id="circle" class="w-100 flex mt-6 justify-around hidden">
+          <p class="text-gray-500">&pi;</p>
+          <p class="text-red-500">x</p>
+
+          <input type="number" class="circle_radius" placeholder="enter radius">
+          <span><sup>2</sup></span>
+        </div>
+
+        <div class="area_input">
+          <div id="rectangle" class="w-100 mt-6 flex justify-around hidden">
+
+            <input type="number" class="rectangle_length" placeholder="enter length">
+            <p class="text-red-900">x</p>
+            <input type="number" class="rectangle_breadth" placeholder="enter breadth">
+          </div>
+        </div>
+
+
+        <div class="area_input">
+          <div id="square" class="w-50 mt-6 justify-around hidden">
+            <input type="number" class="square_side" placeholder="enter side length">
+            <span><sup>2</sup></span>
+          </div>
+        </div>
+
+
+        <div class="total-area  text-white  mt-6">
+          
+        </div>
+
+        <div class="submit-btn hidden">
+          <input type="submit" value="calculate area"
+            class="calc_area  w-80 bg-white rounded mt-10 text-green-500 p-2 hover:bg-green-300 hover:text-white cursor-pointer">
+        </div>
+
+    </form>
+  </div>
+
+ 
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
